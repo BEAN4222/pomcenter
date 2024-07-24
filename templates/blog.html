@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미니게임 블로그</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .banner {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .banner h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .banner a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+        .banner a:hover {
+            background-color: #0056b3;
+        }
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-post {
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #ffffff;
+        }
+        .blog-post p {
+            color: #bbbbbb;
+        }
+        .admin-panel {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .admin-panel h3 {
+            color: #ffffff;
+            margin-top: 0;
+        }
+        .admin-panel form {
+            display: flex;
+            flex-direction: column;
+        }
+        .admin-panel input, .admin-panel textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #444;
+            color: #ffffff;
+        }
+        .admin-panel button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .admin-panel button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h2>미니게임 블로그</h2>
+        <a href="/">홈으로 가기</a>
+    </div>
+    <div class="blog-content">
+        <div class="blog-post">
+            <h2>새로운 미니게임 출시 안내</h2>
+            <p>오늘 새로운 미니게임 '퍼즐 마스터'가 출시되었습니다. 다양한 난이도의 퍼즐을 즐겨보세요!</p>
+        </div>
+        <div class="blog-post">
+            <h2>이벤트 안내</h2>
+            <p>이번 주말, 모든 게임 점수 2배 이벤트를 진행합니다. 많은 참여 바랍니다!</p>
+        </div>
+        <!-- 추가 블로그 포스트 -->
+    </div>
+    <div class="admin-panel">
+        <h3>관리자 글 작성</h3>
+        <form>
+            <input type="text" placeholder="제목" required>
+            <textarea placeholder="내용" rows="5" required></textarea>
+            <button type="submit">글 작성</button>
+        </form>
+    </div>
+</body>
+</html>

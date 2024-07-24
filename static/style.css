@@ -1,0 +1,160 @@
+* {
+  font-family:"Do Hyeon", sans-serif;
+}
+
+body {
+  background-color: #121212 !important;
+  
+}
+
+.banner{
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  border-radius: 10px;
+  
+}
+
+
+.top {
+  height: 224px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top:50px
+}
+
+.bottom {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  white-space: nowrap;
+  margin-top:250px;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; /* iOS에서 부드러운 스크롤 */
+  scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
+  cursor: grab; 
+}
+.bottom::-webkit-scrollbar {
+  display: none; /* Webkit 브라우저에서 스크롤바 숨기기 */
+}
+
+.bottom .item {
+  display: inline-block;
+  width: 150px;
+  margin: 10px;
+}
+
+.score {
+  font-size: 30px;
+  text-align: right;
+  color: rgb(241, 236, 236)
+}
+
+.life {
+  position: absolute;
+  top: 100px;
+  height: 200px;
+  font-size: 40px;
+  z-index: 1000;
+}
+
+.item {
+  width: 150px;
+  min-width: 150px;
+  margin: 10px;
+  background-color: #fefefe;
+  border-radius: 10px;
+}
+
+
+
+.item_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+.item.dragging {
+  /* Add your hover styles here */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-myown {
+  border-radius: 10px;
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 120px 40px;
+  border: 1px solid #888;
+  width: 1000px; /* Could be more or less, depending on screen size */
+  height: 400px;
+  text-align: center;
+}
+
+.modal-myown h2 {
+  margin-bottom: 20px;
+}
+
+.modal-myown button {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .modal-myown {
+    width: 90%;
+    height: auto;
+  }
+  
+  .life {
+    font-size: 30px;
+  }
+  
+  .item {
+    width: 100px;
+  }
+  
+  .item_img {
+    height: 150px;
+  }
+  
+  .bottom {
+    height: auto;
+    width: 100%;
+    bottom: 20%; /* 화면 하단에서 20% 위치로 조정 */
+  }
+}
+
+@media (max-width: 576px) {
+  .life {
+    font-size: 25px;
+  }
+  
+  .item {
+    width: 80px;
+  }
+  
+  .item_img {
+    height: 120px;
+  }
+  
+  .bottom {
+    bottom: 25%; /* 더 작은 화면에서는 25%로 조정 */
+  }
+}

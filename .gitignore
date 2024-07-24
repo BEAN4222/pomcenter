@@ -1,0 +1,8 @@
+venv/
+.env
+__pycache__
+.vscode/launch.json
+__pycache__.zip
+*.zip
+Procfile
+.ebextensions/packages.config
