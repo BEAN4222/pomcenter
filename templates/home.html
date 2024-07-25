@@ -38,6 +38,9 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
         }
         .game-item img {
             max-width: 100%;
@@ -63,7 +66,22 @@
         .game-item a:hover {
             background-color: #0056b3;
         }
+        
+        @media (max-width: 1024px) {
+            .game-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😊</text></svg>">
+
+
 </head>
 <body>
     <div class="banner">
